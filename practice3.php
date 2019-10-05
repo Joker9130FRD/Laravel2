@@ -20,6 +20,13 @@
         return $max_number;
     }
     
+    function array_square($arr) {
+        $squ = 1;
+        foreach ($arr as $s) {
+            $squ *= $s;
+        }
+        return $squ;
+    }
     
     echo double(11)."  ";
     echo sum(6,5)."  ";
@@ -27,6 +34,8 @@
     $array = [2,3,5,7];
     echo max_array($array)."      ";
     
+    $sample_array = [1,3,5,7,9];
+    echo array_square($sample_array)."      ";
     
     $str = "<p>タグの自動除去</p>"."<br>";
     echo strip_tags($str)."      ";
