@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        @extends('layout.admin')
+        @extends('layouts.admin')
         
         @section('title', 'プロフィール')
         
