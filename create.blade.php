@@ -38,22 +38,16 @@
                             
                             <div class="form-group row">
                                 <label class="col-md-2">性別</label>
-                                <div class="col-md-1">男性</div>
-                                <div class="col-md-1">
-                                    <input type="radio" class="form-control"
-                                           name="gender" value="男性">
-                                </div>
-                                <div class="col-md-1">女性</div>
-                                <div class="col-md-1">
-                                    <input type="radio" class="form-control"
-                                           name="gender" value="女性">
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control"
+                                           name="name" value="{{ old('gender') }}">
                                 </div>
                             </div>
                             
                             <div class="form-group row">
                                 <label class="col-md-2">趣味</label>
                                 <div class="col-md-10">
-                                    <textarea class="form-control" name="hobby" rows="5">
+                                    <textarea class="form-control" name="hobby" rows="3">
                                         {{ old('hobby') }}
                                     </textarea>
                                 </div>
@@ -62,7 +56,7 @@
                             <div class="form-group row">
                                 <label class="col-md-2">自己紹介欄</label>
                                 <div class="col-md-10">
-                                    <textarea class="form-control" name="introduction" rows="20">
+                                    <textarea class="form-control" name="introduction" rows="15">
                                         {{ old('introduction') }}
                                     </textarea>
                                 </div>
