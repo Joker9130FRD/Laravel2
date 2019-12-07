@@ -16,4 +16,9 @@ class Profile extends Model
         'instruction' => '',
     );
     
+    
+    public function histories()
+    {
+      return $this->hasMany('App\ProfileHistory');
+    }
 }
